@@ -1,5 +1,8 @@
 /* tslint:disable:no-unused-variable */
 
+//create planet service
+//ng generate service shared/planets
+
 import { TestBed, async, inject } from '@angular/core/testing';
 import { PlanetsService } from './planets.service';
 
