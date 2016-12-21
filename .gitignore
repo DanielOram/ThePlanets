@@ -33,3 +33,10 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+
+#installed npm packages inside /client
+/client/node_modules
+
+# compiled output in /client
+/client/dist
+/client/tmp
