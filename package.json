@@ -1,5 +1,5 @@
 {
-  "name": "basictemplate",
+  "name": "theplanets",
   "version": "1.0.0",
   "description": "Angular 2 application displaying information about our solar system.",
   "main": "app.js",
