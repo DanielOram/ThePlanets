@@ -2,7 +2,7 @@
 //ng generate service shared/planets
 
 import { Injectable } from '@angular/core';
-import { Planets } from './planets';
+import { Planets } from './planets.model';
 
 @Injectable()
 export class PlanetsService {
