@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Planets, PlanetsService } from './shared';
+import { Planets } from './shared/planets';
+import { PlanetsService } from './shared/planets.service';
 
 @Component({
   selector: 'Planets-root',
