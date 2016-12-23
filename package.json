@@ -4,10 +4,11 @@
   "description": "Angular 2 application displaying information about our solar system.",
   "main": "app.js",
   "scripts": {
-    "start": "concurrently --kill-others \"node app.js\" \"cd client && ng serve\"",
+    "start": "concurrently --kill-others \"node app.js\" \"npm run start:angular\" ",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
-    "heroku-postbuild": "npm install --prefix ./client"
+    "heroku-postbuild": "npm install --prefix ./client",
+    "start:angular": "cd client && ng serve"
   },
   "author": "",
   "license": "ISC",
