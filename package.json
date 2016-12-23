@@ -4,7 +4,7 @@
   "description": "Angular 2 application displaying information about our solar system.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "concurrently --kill-others \"node app.js\" \"cd client && ng serve\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
     "heroku-postbuild": "npm install --prefix ./client"
