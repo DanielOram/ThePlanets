@@ -10,7 +10,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}) );
 
 app.use( express.static(__dirname + '/client/dist' ) );
-app.set('view engine', 'jade');
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
 
 app.use('/', index);
 
