@@ -9,7 +9,7 @@
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
     "heroku-postbuild": "npm install --prefix ./client && cd client && npm run build:prod && cd ..",
     "start:angular": "cd client && npm start",
-    "build:prod": "ng build -prod",
+    "build:prod": "ng build -prod && echo ng prod build complete!",
     "concurrent-tasks": "concurrently --kill-others"
   },
   "author": "",
