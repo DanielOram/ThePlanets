@@ -10,6 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}) );
 
 app.use( express.static(__dirname + '/client/dist' ) );
+app.set('views', __dirname+'/client/dist');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
