@@ -14,3 +14,9 @@ In order to run the application for development, `cd` into the `client/` directo
 This is the quickest and simplest way.
 
 The project will be running on port `:4200`
+
+##Deploying to Heroku
+
+The app is currently up at https://planets-ng2.herokuapp.com/
+
+The project is configured for deployment to heroku
