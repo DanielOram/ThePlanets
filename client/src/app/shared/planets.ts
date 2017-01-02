@@ -6,4 +6,5 @@ export class Planets {
     name: string;
     distanceFromSun: number;
     description: string;
+    image: string;
 }
