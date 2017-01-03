@@ -12,6 +12,10 @@ export class PlanetsService {
   getPlanets(): Promise<Planets[]>{
     return Promise.resolve(PLANETSDATA);
   }
+
+  setDefaultPlanet(): Promise<Planets>{
+    return Promise.resolve(PLANETSDATA.filter(planet => planet.position == 1)[0]);
+  }
 }
 
 const IMG_SRC: string = 'assets/images/';
