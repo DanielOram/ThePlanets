@@ -12,5 +12,19 @@
 </md-grid-list>
  
 <br>
-<p>You selected <b>{{selectedPlanet.name}}</b> planet</p>
- <i>{{selectedPlanet.description}}</i>
+ <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img [src]="selectedPlanet.image" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                <!--This is a square image. Add the "circle" class to it to make it appear circular.-->
+                You selected the planet <b>{{selectedPlanet.name}}.</b>
+                <i>{{selectedPlanet.description}}</i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
