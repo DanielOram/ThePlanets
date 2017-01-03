@@ -1,6 +1,37 @@
-<md-toolbar>
-  Our Planets - Using Angular 2 Material  
-</md-toolbar>
+<nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">The Planets - Using Angular 2 Material</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Extra</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#">Sass</a></li>
+        <li><a href="#">Components</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+<!-- planet tabs-->
+      <ul class="tabs tabs-transparent">
+        <li class="tab" *ngFor="let planet of planetsList">
+          <a class="active" href="#{{planet.name}}" [class.active]="planet.name == selectedPlanet.name" (click)="showPlanetInfo(planet)">{{planet.name}}</a>
+        </li>
+      </ul>
+      <!--<ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#test1">Test 1</a></li>
+        <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+        <li class="tab"><a href="#test3">Disabled Tab</a></li>
+        <li class="tab"><a href="#test4">Test 4</a></li>
+      </ul>-->
+    </div>
+  </nav>
+  <!--<div id="test1" class="col s12">Test 1</div>
+  <div id="test2" class="col s12">Test 2</div>
+  <div id="test3" class="col s12">Test 3</div>
+  <div id="test4" class="col s12">Test 4</div>-->
+
+
 
 
  <div class="col s12 m8 offset-m2 l6 offset-l3">
@@ -21,14 +52,24 @@
       </div>
 
       
- 
+
 <md-grid-list cols="4" rowHeight="100px" >
-      <md-grid-tile *ngFor="let planet of planetsList" >
-          <h5 md-line>{{planet.name}}</h5>
-          <button md-icon-button (click)="showPlanetInfo(planet)">
-            <md-icon>info</md-icon>
-          </button>         
+      <md-grid-tile *ngFor="let planet of planetsList">
+        <div class="chip" (click)="showPlanetInfo(planet)">
+          <img [src]="planet.image" alt="planet info">
+            {{planet.name}}
+      </div>
       </md-grid-tile>
 </md-grid-list>
- 
+
+<br> 
+
+<div class="row">
+  <ul class="collection">
+    <li class="collection-item" *ngFor="let planet of planetsList">{{planet.name}}</li>
+  </ul> 
+</div>
+
+    
+
 <br>
