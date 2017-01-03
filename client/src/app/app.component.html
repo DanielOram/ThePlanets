@@ -21,27 +21,24 @@
     </div>
   </nav>
 
-
-
-
- <div class="col s12 m8 offset-m2 l6 offset-l3">
+<div class="col s12 m8 offset-m2 l6 offset-l3">
         <div class="card-panel grey lighten-5 z-depth-1">
           <div class="row valign-wrapper">
             <div class="col s2">
               <img [src]="selectedPlanet.image" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
             </div>
             <div class="col s10">
-              <span class="black-text">
-                <!--This is a square image. Add the "circle" class to it to make it appear circular.-->
-                You selected the planet <b>{{selectedPlanet.name}}.</b>
-                <i>{{selectedPlanet.description}}</i>
-              </span>
+              
+              <div class="row">
+                <div class="col s12"><h4>{{selectedPlanet.name}}</h4></div>
+                <div class="col s12 m12 l12"><p>It takes {{selectedPlanet.name}} <b>{{selectedPlanet.yearLength}}</b> earth days to orbit the sun.</p></div>
+                <!--<div class="col s12 m12 l12"><p>{{selectedPlanet.description}}</p></div>-->
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      
 
 <md-grid-list cols="4" rowHeight="100px" >
       <md-grid-tile *ngFor="let planet of planetsList">
