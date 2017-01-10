@@ -4,6 +4,16 @@
 import { Injectable } from '@angular/core';
 import { Planets } from './planets';
 
+//import planet models
+import { Mercury } from './Planets/Mercury';
+import { Venus } from './Planets/Venus';
+import { Earth } from './Planets/Earth';
+import { Mars } from './Planets/Mars';
+import { Jupiter } from './Planets/Jupiter';
+import { Saturn } from './Planets/Saturn';
+import { Uranus } from './Planets/Uranus';
+import { Neptune } from './Planets/Neptune';
+
 @Injectable()
 export class PlanetsService {
 
@@ -21,12 +31,12 @@ export class PlanetsService {
 const IMG_SRC: string = 'assets/images/';
 
 const PLANETSDATA: Planets[] = [
-  {position: 1, name: 'Mercury', distanceFromSun: 58, yearLength: 88, description: '88 earth days to orbit the sun', image: IMG_SRC + 'mercury.jpg' },
-  {position: 2, name: 'Venus', distanceFromSun: 108, yearLength: 225, description: '225 earth days to orbit the sun', image: IMG_SRC + 'venus.jpg' },
-  {position: 3, name: 'Earth', distanceFromSun: 150, yearLength: 365, description: '365 earth days to orbit the sun', image: IMG_SRC + 'earth.jpg' },
-  {position: 4, name: 'Mars', distanceFromSun: 228, yearLength: 686, description: '686 earth days to orbit the sun', image: IMG_SRC + 'mars.jpg' },
-  {position: 5, name: 'Jupiter', distanceFromSun: 778, yearLength: 12, description: '12 earth years to orbit the sun', image: IMG_SRC + 'jupiter.jpg' },
-  {position: 6, name: 'Saturn', distanceFromSun: 886, yearLength: 29, description: '29 eath years to orbit the sun', image: IMG_SRC + 'saturn.jpg' },
-  {position: 7, name: 'Uranus', distanceFromSun: 1800, yearLength: 84, description: '84 earth years to orbit the sun', image: IMG_SRC + 'uranus.jpg' },
-  {position: 8, name: 'Neptune', distanceFromSun: 2800, yearLength: 165, description: '165 earth years to orbit the sun', image: IMG_SRC + 'neptune.jpg' }
-]
+    Mercury,
+    Venus,
+    Earth,
+    Mars,
+    Jupiter,
+    Saturn,
+    Uranus,
+    Neptune
+  ]
