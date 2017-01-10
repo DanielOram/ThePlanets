@@ -26,6 +26,10 @@ export class PlanetsService {
   setDefaultPlanet(): Promise<Planets>{
     return Promise.resolve(PLANETSDATA.filter(planet => planet.position == 1)[0]);
   }
+
+  getFormattedDescription(): Promise<String[]>{
+    return this.setDefaultPlanet().then(planet => planet.description.split('\n'));
+  }
 }
 
 const PLANETSDATA: Planets[] = [
