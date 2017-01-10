@@ -1,7 +1,7 @@
 import { Planets } from '../planets';
 import { Constants } from '../../constants';
 
-const Mercury: Planets = {
+export const Mercury: Planets = {
     position: 1, 
     name: 'Mercury', 
     distanceFromSun: 58, 
