@@ -28,8 +28,6 @@ export class PlanetsService {
   }
 }
 
-const IMG_SRC: string = 'assets/images/';
-
 const PLANETSDATA: Planets[] = [
     Mercury,
     Venus,
