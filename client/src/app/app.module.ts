@@ -6,6 +6,7 @@ import { PlanetsService } from './shared/planets.service';
 import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
