@@ -6,7 +6,7 @@ export const Neptune: Planets = {
     name: 'Neptune', 
     distanceFromSun: 2800, 
     yearLength: '165 earth years',
-    description: 'Neptune',
+    description: 'Coming soon..',
     image: Constants.getImgSrc() + 'neptune.jpg',
     diameter_km: 49244,
     temperature_low: '-218',

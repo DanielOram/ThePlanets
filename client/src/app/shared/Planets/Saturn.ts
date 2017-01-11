@@ -6,7 +6,7 @@ export const Saturn: Planets = {
     name: 'Saturn', 
     distanceFromSun: 886, 
     yearLength: '29 eath years',
-    description: 'Saturn',
+    description: 'Coming Soon..',
     image: Constants.getImgSrc() + 'saturn.jpg',
     diameter_km: 116464,
     temperature_low: 'varies by layer',

@@ -6,7 +6,7 @@ export const Uranus: Planets = {
     name: 'Uranus', 
     distanceFromSun: 1800, 
     yearLength: '84 earth years',
-    description: 'Uranus',
+    description: 'Coming soon..',
     image: Constants.getImgSrc() + 'uranus.jpg',
     diameter_km: 50724,
     temperature_low: 'varies by layer',
