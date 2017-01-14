@@ -5,12 +5,15 @@ import { HttpModule } from '@angular/http';
 import { PlanetsService } from './shared/planets.service';
 import { MaterialModule } from '@angular/material';
 
+
 import { AppComponent } from './app.component';
 import 'hammerjs';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
